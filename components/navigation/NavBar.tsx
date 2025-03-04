@@ -166,6 +166,7 @@ export default function NavBar({ className = '', hideLogo = false }: NavBarProps
           <button
             onClick={() => setMobileMenuOpen(true)}
             type='button'
+            data-id="open-side-bar"
             className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none'
           >
             <svg className='size-6' stroke='currentColor' fill='none' viewBox='0 0 24 24'>

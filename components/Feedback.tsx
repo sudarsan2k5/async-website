@@ -106,6 +106,7 @@ export default function Feedback({ className }: IFeedbackProps) {
       <form onSubmit={handleSubmit}>
         <div className='my-4 flex flex-col'>
           <textarea
+            data-id="suggestion-box"
             className='inline-block h-20 w-full rounded-md border bg-gray-50 px-2 py-1 align-top text-sm text-gray-700 focus:border-0'
             placeholder='Write your suggestions here'
             onChange={(e) => setFeedback(e.target.value)}
@@ -113,6 +114,7 @@ export default function Feedback({ className }: IFeedbackProps) {
           />
           <div className='mt-4 block text-sm lg:flex lg:flex-row'>
             <button
+              data-id="feedback-button"
               className='w-full rounded bg-primary-500 py-2 text-white shadow-md transition-all duration-500 ease-in-out hover:shadow-lg lg:w-6/12'
               type='submit'
             >
